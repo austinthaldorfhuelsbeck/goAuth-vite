@@ -2,10 +2,13 @@ package main
 
 import (
 	"fmt"
+	"goAuth/internal/auth"
 	"goAuth/internal/server"
 )
 
 func main() {
+	// Initialize the auth package
+	auth.NewAuth()
 
 	server := server.NewServer()
 
